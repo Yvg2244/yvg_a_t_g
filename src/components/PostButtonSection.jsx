@@ -1,10 +1,7 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
-import {
-  AiOutlineUsergroupAdd,
-  AiFillCaretDown,
+import grp from '../assets/grp.png'
 
-} from "react-icons/ai";
 import "../App.css";
 const PostButtonSection = ({ isSticky }) => {
   return (
@@ -47,16 +44,18 @@ const PostButtonSection = ({ isSticky }) => {
         </Nav.Item>
         <Nav.Item>
           <button className="d-block d-md-none border-0 px-3 py-2">
-            Filter: All <AiFillCaretDown />
+            Filter: All &#9660;
+
           </button>
         </Nav.Item>
       </Nav>
       <div className="post-button-section  d-none d-md-flex">
         <button className="post-button">
-          Write a Post <AiFillCaretDown />
+          Write a Post &#9660;
+
         </button>
         <button className="join-button">
-          <AiOutlineUsergroupAdd /> Join Group
+         <img src={grp}/> Join Group
         </button>
       </div>
     </div>

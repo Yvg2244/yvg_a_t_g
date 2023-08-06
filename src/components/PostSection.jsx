@@ -2,9 +2,9 @@ import React from "react";
 import "../App.css";
 import { PostCard } from "./Card";
 import { postData } from "../constant/postData";
-import { ImLocation2 } from "react-icons/im";
-import { BiSolidPencil } from "react-icons/bi";
-import { AiOutlineInfoCircle } from "react-icons/ai";
+import info from '../assets/info.png'
+import location from '../assets/location.png'
+import pen from '../assets/pen.png'
 import { Recommendations } from "./Recommendations";
 
 const PostSection = () => {
@@ -34,7 +34,7 @@ const PostSection = () => {
       </div>
       <div className="d-none d-md-flex" style={{display:"flex",flexDirection:"column"}}>
         <div style={{margin:"10px 10px"}}>
-          <ImLocation2 />
+          <img src={location} />
           <input
             type="text"
             className="location"
@@ -42,10 +42,10 @@ const PostSection = () => {
             name=""
             id=""
           ></input>
-          <BiSolidPencil />
+          <img src={pen} />
         </div>
         <div style={{ color: "gray",width:"20rem" }}>
-          <AiOutlineInfoCircle />
+          <img src={info} />
           <span style={{ color: "gray",margin:"10px 10px " }}>
             Your location will help us serve better and extend a personalised
             experience.

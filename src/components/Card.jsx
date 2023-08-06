@@ -5,7 +5,8 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
 import "../App.css";
-import {AiOutlineEye} from 'react-icons/ai'
+import eye from '../assets/eye.png'
+import share from '../assets/share.png'
 import {BiSolidShareAlt} from 'react-icons/bi'
 export const PostCard = ({
   type,
@@ -45,9 +46,9 @@ export const PostCard = ({
             roundedCircle
           />
           <span style={{ fontWeight: "600", width: "60%" }}>{auther}</span>{" "}
-          <span><AiOutlineEye/></span>
+          <span><img src={eye}></img></span>
           <span style={{  width: "10%" }}>{views}</span>
-          <span style={{display:"flex",  backgroundColor: "#EDEEF0",height:"fit-content" ,padding:"5px", aspectRatio:"1"}}><BiSolidShareAlt/></span>
+          <span style={{display:"flex",  backgroundColor: "#EDEEF0",height:"fit-content" ,padding:"5px", aspectRatio:"1"}}><img src={share}/></span>
         </Card.Text>
       </Card.Body>
     </Card>

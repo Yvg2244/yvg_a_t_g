@@ -8,7 +8,6 @@ import Alert from "react-bootstrap/Alert";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
-import { BiSearch } from "react-icons/bi";
 import "../App.css";
 import illus from "../assets/illus.png";
 import logo from "../assets/logo.png";

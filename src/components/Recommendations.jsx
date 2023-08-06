@@ -2,7 +2,8 @@ import React from "react";
 import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
-import { AiFillLike } from "react-icons/ai";
+import like from '../assets/like.png'
+
 import { RecommendationData } from "../constant/recommendationData";
 import RecomendationCard from "./RecomendationCard";
 export const Recommendations = () => {
@@ -12,7 +13,7 @@ export const Recommendations = () => {
         <Row style={{margin:"35px 0px"}}>
           <Col>
             <span >
-              <AiFillLike />
+              <img src={like} />
             </span>
             <span style={{margin:"5px 15px"}}>RECOMMENDED GROUPS</span>
           </Col>
