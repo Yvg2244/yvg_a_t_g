@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import "../App.css";
-import { BiArrowBack } from "react-icons/bi";
+import { IoMdArrowBack } from "react-icons/io";
 const Hero = () => {
   return (
     <Container style={{ padding: "0px" }} fluid className="hero-container">
@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="d-flex hero-nav d-md-none">
           <div>
             {" "}
-            <BiArrowBack />
+            <IoMdArrowBack />
           </div>
           <div>
             <button
