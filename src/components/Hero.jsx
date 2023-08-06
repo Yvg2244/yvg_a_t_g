@@ -1,10 +1,10 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import "../App.css";
-
+import { BiArrowBack } from "react-icons/bi";
 const Hero = () => {
   return (
-    <Container fluid className="hero-container">
+    <Container style={{ padding: "0px" }} fluid className="hero-container">
       <div
         className="hero-background"
         style={{
@@ -14,6 +14,25 @@ const Hero = () => {
       >
         {/* Overlay */}
         <div className="hero-overlay"></div>
+        <div className="d-flex hero-nav d-md-none">
+          <div>
+            {" "}
+            <BiArrowBack />
+          </div>
+          <div>
+            <button
+              style={{
+                color: "white",
+                backgroundColor: "transparent",
+                border: "2px solid white",
+                borderRadius: "5px",
+                padding: "10px 20px",
+              }}
+            >
+              Join Group
+            </button>
+          </div>
+        </div>
         <div className="hero-text">
           Computer Engineering
           <p className=" hero-subtext">
