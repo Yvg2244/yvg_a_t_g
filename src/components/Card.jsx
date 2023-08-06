@@ -1,13 +1,13 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
+
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
+
 import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
 import "../App.css";
 import eye from '../assets/eye.png'
 import share from '../assets/share.png'
-import {BiSolidShareAlt} from 'react-icons/bi'
+
 export const PostCard = ({
   type,
   title,
